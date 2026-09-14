@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — 2Tech Agency</title>
+  <meta name="description" content="Get in touch with 2Tech Agency, USA — by form, email or WhatsApp." />
+  <link rel="icon" href="assets/icon-app.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+        <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="contact.html" data-i18n="nav.cta">Get a quote</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="langToggle" type="button" aria-label="Switch language">FR</button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="hero-eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h1 data-i18n="contact.title">Let's talk about your project</h1>
+          <p data-i18n="contact.lead">Fill in the form and choose how you'd like to send it — email or WhatsApp.</p>
+        </div>
+
+        <div class="grid contact-grid">
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+            <div class="card">
+              <h3 data-i18n="contact.infoTitle">Contact details</h3>
+              <p data-i18n="contact.address">United States</p>
+              <p><a href="mailto:hello@2techagency.com">hello@2techagency.com</a></p>
+              <p><a href="tel:+212606830066">+212 606-830066</a></p>
+              <p data-i18n="contact.hours">Mon–Fri, 9:00–18:00 (ET)</p>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="card">
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="name" data-i18n="contact.formName">Full name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" />
+                <p class="error-msg" data-i18n="contact.errRequired">This field is required.</p>
+              </div>
+
+              <div class="field">
+                <label for="email" data-i18n="contact.formEmail">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
+                <p class="error-msg" data-i18n="contact.errEmail">Please enter a valid email address.</p>
+              </div>
+
+              <div class="field">
+                <label for="phone" data-i18n="contact.formPhone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="field">
+                <label for="service" data-i18n="contact.formService">Service you're interested in</label>
+                <select id="service" name="service">
+                  <option value="" data-i18n="contact.formServiceDefault">Select a service</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="ecommerce">E-commerce Stores</option>
+                  <option value="mobile-apps">Mobile Apps</option>
+                  <option value="web-apps">Web Applications &amp; SaaS</option>
+                  <option value="maintenance">Maintenance &amp; Support</option>
+                  <option value="seo">SEO</option>
+                  <option value="social-media">Social Media Management</option>
+                  <option value="paid-ads">Paid Advertising</option>
+                  <option value="content-marketing">Content Marketing</option>
+                  <option value="branding">Branding &amp; Identity</option>
+                  <option value="email-marketing">Email Marketing</option>
+                  <option value="ai-chatbots">AI Chatbots</option>
+                  <option value="automation">Process Automation</option>
+                  <option value="data-dashboards">Data Analysis &amp; Dashboards</option>
+                  <option value="custom-ai">Custom AI Solutions</option>
+                  <option value="ai-integration">AI Integration</option>
+                  <option value="consulting">Digital Consulting</option>
+                  <option value="crm">CRM Setup &amp; Optimization</option>
+                  <option value="digital-transformation">Digital Transformation</option>
+                  <option value="startup-launch">Startup Launch Packages</option>
+                  <option value="training">Training &amp; Workshops</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message" data-i18n="contact.formMessage">Project details</label>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
+                <p class="error-msg" data-i18n="contact.errMessage">Please add a few details (min. 10 characters).</p>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit" data-i18n="contact.formSubmit">Prepare message</button>
+
+              <div class="form-status" id="formStatus" role="status">
+                <p><strong data-i18n="contact.successTitle">Your message is ready.</strong></p>
+                <p data-i18n="contact.successLead">Choose how you'd like to send it:</p>
+                <div class="cta-row" id="sendChoices" hidden>
+                  <a class="btn btn-outline btn-sm" id="sendEmail" href="#" data-i18n="contact.sendEmail">Send by email</a>
+                  <a class="btn btn-primary btn-sm" id="sendWhatsapp" href="#" target="_blank" rel="noopener" data-i18n="contact.sendWhatsapp">Send by WhatsApp</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="index.html">
+            <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+            <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+          </a>
+          <p data-i18n="footer.tagline">Digital agency based in the United States, building for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.links">Quick links</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="services.html#web" data-i18n="cat.web.title">Web &amp; Apps</a></li>
+            <li><a href="services.html#marketing" data-i18n="cat.marketing.title">Marketing</a></li>
+            <li><a href="services.html#ai" data-i18n="cat.ai.title">AI &amp; Data</a></li>
+            <li><a href="services.html#business" data-i18n="cat.business.title">Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li data-i18n="contact.address">United States</li>
+            <li><a href="mailto:hello@2techagency.com">hello@2techagency.com</a></li>
+            <li><a href="tel:+212606830066">+212 606-830066</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> 2Tech Agency. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span class="small">United States</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" id="whatsappFab" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.1c2.3 1.3 4.9 2 7.7 2 8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.9 1.3 1.3-4.8-.3-.5C3.4 21 2.7 18.6 2.7 16 2.7 8.7 8.7 2.7 16 2.7S29.3 8.7 29.3 16 23.3 29.3 16 29.3zm7.6-9.9c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.2 0-.6.1-.9.5-.3.4-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.1.1.7-.1 2.4-.9 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service — 2Tech Agency</title>
+  <meta name="description" content="Service detail — 2Tech Agency, USA." />
+  <link rel="icon" href="assets/icon-app.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+        <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" aria-current="page" data-i18n="nav.services">Services</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="contact.html" data-i18n="nav.cta">Get a quote</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="langToggle" type="button" aria-label="Switch language">FR</button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!--
+      This single template renders one of the 22 services based on the ?s= URL parameter,
+      e.g. service.html?s=web-design — see SERVICES array and renderServicePage() in js/main.js.
+      No separate HTML file is created per service.
+    -->
+    <div id="serviceRoot"></div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card" style="padding: clamp(2rem, 5vw, 3.4rem); text-align:center;">
+          <h2 data-i18n="service.ctaTitle">Ready to talk about this?</h2>
+          <p class="center" style="max-width:52ch;" data-i18n="service.ctaLead">Tell us about your project and we'll recommend the right scope.</p>
+          <div class="cta-row" style="justify-content:center;">
+            <a class="btn btn-primary" href="contact.html" data-i18n="cta.button">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="index.html">
+            <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+            <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+          </a>
+          <p data-i18n="footer.tagline">Digital agency based in the United States, building for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.links">Quick links</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="services.html#web" data-i18n="cat.web.title">Web &amp; Apps</a></li>
+            <li><a href="services.html#marketing" data-i18n="cat.marketing.title">Marketing</a></li>
+            <li><a href="services.html#ai" data-i18n="cat.ai.title">AI &amp; Data</a></li>
+            <li><a href="services.html#business" data-i18n="cat.business.title">Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li data-i18n="contact.address">United States</li>
+            <li><a href="mailto:hello@2techagency.com">hello@2techagency.com</a></li>
+            <li><a href="tel:+212606830066">+212 606-830066</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> 2Tech Agency. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span class="small">United States</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" id="whatsappFab" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.1c2.3 1.3 4.9 2 7.7 2 8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.9 1.3 1.3-4.8-.3-.5C3.4 21 2.7 18.6 2.7 16 2.7 8.7 8.7 2.7 16 2.7S29.3 8.7 29.3 16 23.3 29.3 16 29.3zm7.6-9.9c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.2 0-.6.1-.9.5-.3.4-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.1.1.7-.1 2.4-.9 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

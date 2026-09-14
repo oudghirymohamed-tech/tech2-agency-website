@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2Tech Agency — Digital Agency in United States</title>
+  <meta name="description" content="2Tech Agency designs and builds websites, apps, marketing and AI solutions for clients across the USA, Europe and North America." />
+  <link rel="icon" href="assets/icon-app.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { corePlugins: { preflight: false } };</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+        <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline btn-sm" href="contact.html" data-i18n="nav.cta">Get a quote</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="langToggle" type="button" aria-label="Switch language">FR</button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero relative overflow-hidden bg-slate-950 text-white">
+      <!-- ambient glows -->
+      <div class="absolute -top-40 -left-40 w-[480px] h-[480px] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute -bottom-48 -right-32 w-[420px] h-[420px] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="container relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+          <!-- Left: content -->
+          <div>
+            <p class="uppercase tracking-[0.28em] text-[0.72rem] sm:text-xs text-slate-400 mb-6" data-i18n-html="hero.eyebrow">Innovation <span class="text-cyan-400">•</span> Technology <span class="text-cyan-400">•</span> Impact</p>
+            <h1 class="text-4xl sm:text-5xl xl:text-6xl font-bold leading-[1.08] tracking-tight mb-6" data-i18n-html="hero.title">We Build<br /><span class="text-gradient">Digital Solutions</span><br />for a Better Future</h1>
+            <p class="text-slate-400 max-w-xl text-base sm:text-lg leading-relaxed mb-8" data-i18n="hero.lead">2Tech Agency is a forward-thinking digital agency, specialized in web development, mobile applications, and technology solutions that turn ideas into real impact.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="contact.html"><span data-i18n="hero.ctaPrimary">Start Your Project</span>&nbsp;<span aria-hidden="true">→</span></a>
+              <a class="btn btn-outline" href="services.html" data-i18n="hero.ctaSecondary">Our Services</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat"><strong data-i18n="hero.stat1n">50+</strong><span data-i18n="hero.stat1l">Projects Delivered</span></div>
+              <div class="hero-stat"><strong data-i18n="hero.stat2n">20+</strong><span data-i18n="hero.stat2l">Happy Clients</span></div>
+              <div class="hero-stat"><strong data-i18n="hero.stat3n">5+</strong><span data-i18n="hero.stat3l">Years of Experience</span></div>
+            </div>
+          </div>
+
+          <!-- Right: visual -->
+          <div class="relative flex items-center justify-center py-6 lg:py-10">
+            <div class="absolute w-[380px] h-[380px] rounded-full bg-blue-600/30 blur-[110px] pointer-events-none" aria-hidden="true"></div>
+            <img src="assets/icon-app.png" alt="2Tech Agency logo" class="float-anim relative w-60 sm:w-72 lg:w-[22rem] rounded-[24%] shadow-[0_30px_70px_rgba(37,99,235,0.5)]" />
+            <div class="absolute bottom-2 right-1 sm:right-4 lg:right-2 rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur-md px-5 py-4 shadow-2xl">
+              <ul class="flex flex-col gap-1.5 text-sm text-slate-300">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" aria-hidden="true"></span><span data-i18n="hero.side1">Ideas</span></li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" aria-hidden="true"></span><span data-i18n="hero.side2">Technology</span></li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" aria-hidden="true"></span><span data-i18n="hero.side3">Digital Products</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-bar">
+      <div class="container">
+        <div class="proof-grid reveal">
+          <article class="proof-card">
+            <span class="proof-label">Strategy-first</span>
+            <h3>Clear roadmaps, not guesswork.</h3>
+          </article>
+          <article class="proof-card">
+            <span class="proof-label">Fast execution</span>
+            <h3>Design and build in focused sprints.</h3>
+          </article>
+          <article class="proof-card">
+            <span class="proof-label">Measured growth</span>
+            <h3>Every decision tied to performance.</h3>
+          </article>
+          <article class="proof-card">
+            <span class="proof-label">Built to last</span>
+            <h3>Clean systems your team can scale.</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICE CATEGORIES ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="hero-eyebrow" data-i18n="home.servicesEyebrow">What we do</p>
+          <h2 data-i18n="home.servicesTitle">Four ways we move your business forward</h2>
+          <p data-i18n="home.servicesLead">Every engagement draws on the same four disciplines, combined however your project needs.</p>
+        </div>
+        <div class="grid grid-4">
+          <a class="card cat-card reveal" href="services.html#web">
+            <div class="cat-icon" aria-hidden="true">W</div>
+            <h3 data-i18n="cat.web.title">Web &amp; Apps</h3>
+            <p data-i18n="cat.web.desc">Websites, e-commerce, mobile and web apps built to load fast and convert.</p>
+            <span class="more" data-i18n="cat.explore">Explore services</span>
+          </a>
+          <a class="card cat-card reveal" href="services.html#marketing">
+            <div class="cat-icon" aria-hidden="true">M</div>
+            <h3 data-i18n="cat.marketing.title">Marketing</h3>
+            <p data-i18n="cat.marketing.desc">SEO, paid media, content and branding that turn attention into customers.</p>
+            <span class="more" data-i18n="cat.explore">Explore services</span>
+          </a>
+          <a class="card cat-card reveal" href="services.html#ai">
+            <div class="cat-icon" aria-hidden="true">AI</div>
+            <h3 data-i18n="cat.ai.title">AI &amp; Data</h3>
+            <p data-i18n="cat.ai.desc">Chatbots, automation and dashboards that remove manual work.</p>
+            <span class="more" data-i18n="cat.explore">Explore services</span>
+          </a>
+          <a class="card cat-card reveal" href="services.html#business">
+            <div class="cat-icon" aria-hidden="true">B</div>
+            <h3 data-i18n="cat.business.title">Business</h3>
+            <p data-i18n="cat.business.desc">Consulting, CRM and digital transformation for growing teams.</p>
+            <span class="more" data-i18n="cat.explore">Explore services</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="hero-eyebrow" data-i18n="process.eyebrow">How we work</p>
+          <h2 data-i18n="process.title">A clear process, from first call to launch</h2>
+        </div>
+        <div class="process-list">
+          <div class="process-step reveal">
+            <h3 data-i18n="process.1.title">Discover</h3>
+            <p data-i18n="process.1.desc">We learn your market, goals and constraints in a short discovery call.</p>
+          </div>
+          <div class="process-step reveal">
+            <h3 data-i18n="process.2.title">Design</h3>
+            <p data-i18n="process.2.desc">Wireframes and prototypes validate direction before any code is written.</p>
+          </div>
+          <div class="process-step reveal">
+            <h3 data-i18n="process.3.title">Build</h3>
+            <p data-i18n="process.3.desc">Development happens in short sprints, with regular check-ins and demos.</p>
+          </div>
+          <div class="process-step reveal">
+            <h3 data-i18n="process.4.title">Grow</h3>
+            <p data-i18n="process.4.desc">We launch, measure results, and keep optimizing month over month.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="hero-eyebrow" data-i18n="pricing.eyebrow">Pricing</p>
+          <h2 data-i18n="pricing.title">Simple packages, custom quotes on request</h2>
+          <p data-i18n="pricing.lead">Every project is different — these packages are a starting point for a conversation.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card price-card reveal">
+            <span class="badge" data-i18n="pricing.starter.name">Starter</span>
+            <p class="price-tag" data-i18n="pricing.starter.desc">For small businesses launching their first digital presence.</p>
+            <ul class="price-features">
+              <li data-i18n="pricing.starter.f1">One-page or brochure website</li>
+              <li data-i18n="pricing.starter.f2">Mobile-responsive design</li>
+              <li data-i18n="pricing.starter.f3">Basic SEO setup</li>
+              <li data-i18n="pricing.starter.f4">1 month of support</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="contact.html" data-i18n="pricing.getQuote">Get a quote</a>
+          </div>
+
+          <div class="card price-card featured reveal">
+            <span class="badge" data-i18n="pricing.popular">Most popular</span>
+            <h3 data-i18n="pricing.growth.name">Growth</h3>
+            <p class="price-tag" data-i18n="pricing.growth.desc">For teams that need a full site plus ongoing marketing.</p>
+            <ul class="price-features">
+              <li data-i18n="pricing.growth.f1">Custom website or web app</li>
+              <li data-i18n="pricing.growth.f2">SEO + content strategy</li>
+              <li data-i18n="pricing.growth.f3">Social media management</li>
+              <li data-i18n="pricing.growth.f4">Monthly performance report</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="contact.html" data-i18n="pricing.getQuote">Get a quote</a>
+          </div>
+
+          <div class="card price-card reveal">
+            <span class="badge" data-i18n="pricing.enterprise.name">Enterprise</span>
+            <p class="price-tag" data-i18n="pricing.enterprise.desc">For organizations combining web, AI and automation at scale.</p>
+            <ul class="price-features">
+              <li data-i18n="pricing.enterprise.f1">Web apps &amp; platform engineering</li>
+              <li data-i18n="pricing.enterprise.f2">AI automation &amp; dashboards</li>
+              <li data-i18n="pricing.enterprise.f3">Dedicated account manager</li>
+              <li data-i18n="pricing.enterprise.f4">Priority support &amp; SLA</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="contact.html" data-i18n="pricing.getQuote">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS PREVIEW ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="hero-eyebrow" data-i18n="home.projectsEyebrow">Selected work</p>
+          <h2 data-i18n="home.projectsTitle">Recent projects</h2>
+        </div>
+        <div class="grid grid-3" id="homeProjectsGrid"><!-- rendered by js/main.js --></div>
+        <div class="cta-row mt-lg">
+          <a class="btn btn-outline" href="projects.html" data-i18n="home.viewAll">View all projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="hero-eyebrow" data-i18n="home.testimonialsEyebrow">Client feedback</p>
+          <h2 data-i18n="home.testimonialsTitle">What clients say about working with us</h2>
+        </div>
+        <div class="grid grid-3">
+          <figure class="card testimonial-card reveal">
+            <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote class="testimonial-quote" data-i18n="t.1.quote">2Tech rebuilt our store and conversions doubled within two months. Communication was clear at every step.</blockquote>
+            <figcaption class="testimonial-meta">
+              <span class="testimonial-avatar" aria-hidden="true">AL</span>
+              <div>
+                <strong data-i18n="t.1.name">Amira L.</strong>
+                <span data-i18n="t.1.role">E-commerce Founder</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card testimonial-card reveal">
+            <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote class="testimonial-quote" data-i18n="t.2.quote">The team delivered our SaaS dashboard ahead of schedule, with documentation our own developers could build on.</blockquote>
+            <figcaption class="testimonial-meta">
+              <span class="testimonial-avatar" aria-hidden="true">DR</span>
+              <div>
+                <strong data-i18n="t.2.name">Daniel R.</strong>
+                <span data-i18n="t.2.role">SaaS CEO</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card testimonial-card reveal">
+            <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote class="testimonial-quote" data-i18n="t.3.quote">Their AI chatbot cut our support tickets by 40%. The best agency investment we have made this year.</blockquote>
+            <figcaption class="testimonial-meta">
+              <span class="testimonial-avatar" aria-hidden="true">SM</span>
+              <div>
+                <strong data-i18n="t.3.name">Sofia M.</strong>
+                <span data-i18n="t.3.role">Operations Director</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT CTA ================= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card reveal" style="padding: clamp(2rem, 5vw, 3.4rem); text-align:center;">
+          <h2 data-i18n="cta.title">Have a project in mind?</h2>
+          <p class="center" style="max-width:52ch;" data-i18n="cta.lead">Tell us what you're trying to achieve — we'll reply within one business day.</p>
+          <div class="cta-row" style="justify-content:center;">
+            <a class="btn btn-primary" href="contact.html" data-i18n="cta.button">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="brand" href="index.html">
+            <img src="assets/icon-app.png" alt="2Tech Agency logo" width="52" height="52" />
+            <span class="brand-lockup"><strong>2Tech</strong><small>AGENCY</small></span>
+          </a>
+          <p data-i18n="footer.tagline">Digital agency based in the United States, building for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.links">Quick links</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul>
+            <li><a href="services.html#web" data-i18n="cat.web.title">Web &amp; Apps</a></li>
+            <li><a href="services.html#marketing" data-i18n="cat.marketing.title">Marketing</a></li>
+            <li><a href="services.html#ai" data-i18n="cat.ai.title">AI &amp; Data</a></li>
+            <li><a href="services.html#business" data-i18n="cat.business.title">Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li data-i18n="contact.address">United States</li>
+            <li><a href="mailto:hello@2techagency.com">hello@2techagency.com</a></li>
+            <li><a href="tel:+212606830066">+212 606-830066</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> 2Tech Agency. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span class="small">United States</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp-fab" id="whatsappFab" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.1c2.3 1.3 4.9 2 7.7 2 8.8 0 16-7.2 16-16S24.8 0 16 0zm0 29.3c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.9 1.3 1.3-4.8-.3-.5C3.4 21 2.7 18.6 2.7 16 2.7 8.7 8.7 2.7 16 2.7S29.3 8.7 29.3 16 23.3 29.3 16 29.3zm7.6-9.9c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.6-.2-.9.2s-1 1.3-1.2 1.5c-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.2-.4.4-.6.1-.2.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.7-.7-.9-.7h-.8c-.2 0-.6.1-.9.5-.3.4-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.1.1.7-.1 2.4-.9 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
