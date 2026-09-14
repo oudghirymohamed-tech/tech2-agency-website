@@ -29,7 +29,7 @@ const DICT = {
   'hero.ctaSecondary': { en: 'Our Services', fr: 'Nos services' },
   'hero.side1': { en: 'Ideas', fr: 'Idées' },
   'hero.side2': { en: 'Technology', fr: 'Technologie' },
-  'hero.side3': { en: 'Digital Products', fr: 'Produits digitaux' },
+  'hero.side3': { en: 'Web Development', fr: 'Développement Web' },
   'hero.stat1n': { en: '50+', fr: '50+' },
   'hero.stat1l': { en: 'Projects Delivered', fr: 'Projets livrés' },
   'hero.stat2n': { en: '20+', fr: '20+' },
