@@ -225,6 +225,8 @@ textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
+  position: relative;
+  z-index: 160;
 }
 .brand {
   display: flex;
@@ -350,18 +352,46 @@ textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
   .hamburger { display: block; }
   .main-nav {
     position: fixed;
-    inset: var(--header-h) 0 0 0;
-    background: var(--bg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #020617; /* bg-slate-950 solid background */
+    background: #020617;
+    z-index: 150;
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    padding: 2rem 24px;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--header-h) + 1.5rem) 24px 3rem;
     gap: 2rem;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.7);
   }
   .main-nav.open { transform: translateX(0); }
-  .nav-links { flex-direction: column; gap: 1.4rem; font-size: 1.1rem; }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    font-size: 1.35rem;
+    text-align: center;
+  }
+  .nav-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #cbd5e1;
+  }
+  .main-nav .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
 }
 
 /* ---------- 5. Buttons & forms ---------- */
