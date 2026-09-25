@@ -692,7 +692,7 @@ function initContactForm() {
 
     const mailtoLink = document.getElementById('sendEmail');
     const whatsappLink = document.getElementById('sendWhatsapp');
-    const AGENCY_EMAIL = 'hello@2techagency.com'; // TODO: replace with the agency's real inbox
+    const AGENCY_EMAIL = 'contact@2techagency.space'; // TODO: replace with the agency's real inbox
     const AGENCY_WHATSAPP = '212606830066'; // Agency WhatsApp number (no + or spaces)
 
     if (mailtoLink) {
